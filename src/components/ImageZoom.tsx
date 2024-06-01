@@ -58,6 +58,7 @@ const ImageZoom: React.FC<ImageZoomProps> = ({
         style={[styles.image, style, animatedStyle]}
         source={{ uri }}
         contentFit="contain"
+        cachePolicy="memory-disk"
         onLayout={onImageLayout}
         {...props}
       />
